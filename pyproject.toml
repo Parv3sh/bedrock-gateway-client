@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bedrock-gateway-client"
-version = "1.0.0"
+version = "1.0.1"
 description = "Python client for AWS Bedrock Gateway with IAM authentication"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -43,6 +43,6 @@ dev = [
 bedrock-gateway = "bedrock_gateway_client.cli:cli"
 
 [project.urls]
-Homepage = "https://github.com/parv3sh/bedrock-gateway-client"
-Repository = "https://github.com/parv3sh/bedrock-gateway-client"
-Issues = "https://github.com/parv3sh/bedrock-gateway-client/issues"
+Homepage = "https://github.com/Parv3sh/bedrock-gateway-client"
+Repository = "https://github.com/Parv3sh/bedrock-gateway-client"
+Issues = "https://github.com/Parv3sh/bedrock-gateway-client/issues"
