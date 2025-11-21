@@ -154,6 +154,7 @@ response.raw_response   # Full raw response
 ## Authentication
 
 Uses your AWS credentials automatically:
+
 - Default AWS credentials (~/.aws/credentials)
 - AWS profile: `BedrockClient(profile="my-profile")`
 - Environment variables (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
@@ -166,4 +167,4 @@ MIT License - see LICENSE file for details
 ## Support
 
 For issues, open a GitHub issue at:
-https://github.com/parv3sh/bedrock-gateway-client/issues
+<https://github.com/parv3sh/bedrock-gateway-client/issues>

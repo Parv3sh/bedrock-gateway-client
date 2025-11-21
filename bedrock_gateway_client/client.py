@@ -137,7 +137,7 @@ class BedrockClient:
         
         payload = {
             "messages": messages,
-            "model": model_id,
+            "modelId": model_id,
             "inferenceConfig": inference_config
         }
         
@@ -241,7 +241,7 @@ def configure(
     
     if save:
         config.save()
-        print(f"✅ Configuration saved to ~/.bedrock-gateway/config.yaml")
+        print("✅ Configuration saved to ~/.bedrock-gateway/config.yaml")
 
 
 def chat(message: str, model: str = "sonnet-4.5", **kwargs) -> str:
