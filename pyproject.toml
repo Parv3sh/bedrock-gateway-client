@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bedrock-gateway-client"
+version = "1.0.0"
+description = "Python client for AWS Bedrock Gateway with IAM authentication"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Parvesh Kumar", email = "parvesh.kumar@roymorgan.com"}
+]
+keywords = ["aws", "bedrock", "claude", "anthropic", "api-gateway", "iam"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "boto3>=1.26.0",
+    "requests>=2.28.0",
+    "pyyaml>=6.0",
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "twine>=4.0.0",
+    "build>=0.10.0",
+]
+
+[project.scripts]
+bedrock-gateway = "bedrock_gateway_client.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/parv3sh/bedrock-gateway-client"
+Repository = "https://github.com/parv3sh/bedrock-gateway-client"
+Issues = "https://github.com/parv3sh/bedrock-gateway-client/issues"
