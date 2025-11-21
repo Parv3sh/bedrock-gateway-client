@@ -19,5 +19,5 @@ Usage:
 from .client import BedrockClient, BedrockResponse, chat, configure
 from .config import Config
 
-__version__ = "1.0.0"
+__version__ = "1.0.3"
 __all__ = ["BedrockClient", "BedrockResponse", "chat", "configure", "Config"]
